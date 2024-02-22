@@ -61,7 +61,7 @@ $('.tg').on('submit', function (event) {
         }
     });
     
-    $.tg({
+    $.ajax({
         url: 'tg.php',
         type: 'POST',
         data: data,
@@ -86,6 +86,7 @@ $('.tg').on('submit', function (event) {
             return myXhr;
         },
         error: function( jqXHR, textStatus ) {
+            console.log('error')
             // Тут выводим ошибку
         },
         complete: function() {
