@@ -37,7 +37,7 @@ $(function() {
 /* ОТПРАВКА ФОРМЫ В TELEGRAM КАНАЛ */
 const TOKEN = "7032058840:AAGu6w9NsRbOxyxShidqqz1zWwNnc_vY8hY";
 const CHAT_ID = "-1002022748567";
-const URI_API = `https://api.telegram.org/bot${token}/sendMessage`;
+const URI_API = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
 
 document.getElementById('tg').addEventListener('submit', function(e) {
     e.preventDefault();
