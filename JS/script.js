@@ -33,68 +33,23 @@ $(function() {
     });
 });
 
-$('.tg').on('submit', function (event) {
 
-    event.stopPropagation();
-    event.preventDefault();
+/* ОТПРАВКА ФОРМЫ В TELEGRAM КАНАЛ */
+const TOKEN = "7032058840:AAGu6w9NsRbOxyxShidqqz1zWwNnc_vY8hY";
+const CHAT_ID = "-1002022748567";
+const URI_API = `https://api.telegram.org/bot${token}/sendMessage`;
 
-    let form = this,
-        submit = $('.submit', form),
-        data = new FormData(),
-        files = $('input[type=file]')
+document.getElementById('tg').addEventListener('submit', function(e) {
+    e.preventDefault();
 
+    let message = `<b>Заявка с сайта:</b>\n`;
+    message += `<b>Имя: </b> ${ this.name.value }\n`;
+    message += `<b>Номер телефона: </b> ${ this.phone.value }\n`;
+    message += `<b>Дополнительная информация: </b> ${ this.message.value }\n`;
 
-    $('.submit', form).val('Отправка...');
-    $('input, textarea', form).attr('disabled','');
-
-    data.append( 'name', 		$('[name="name"]', form).val() );
-    data.append( 'phone', 		$('[name="phone"]', form).val() );
-    data.append( 'message', 	$('[name="message"]', form).val() );
-  
-
-    files.each(function (key, file) {
-        let cont = file.files;
-        if ( cont ) {
-            $.each( cont, function( key, value ) {
-                data.append( key, value );
-            });
-        }
-    });
-    
-    $.ajax({
-        url: 'tg.php',
-        type: 'POST',
-        data: data,
-        cache: false,
-        dataType: 'json',
-        processData: false,
-        contentType: false,
-        xhr: function() {
-            let myXhr = $.ajaxSettings.xhr();
-
-            if ( myXhr.upload ) {
-                myXhr.upload.addEventListener( 'progress', function(e) {
-                    if ( e.lengthComputable ) {
-                        let percentage = ( e.loaded / e.total ) * 100;
-                            percentage = percentage.toFixed(0);
-                        $('.submit', form)
-                            .html( percentage + '%' );
-                    }
-                }, false );
-            }
-
-            return myXhr;
-        },
-        error: function( jqXHR, textStatus ) {
-            console.log('error')
-            // Тут выводим ошибку
-        },
-        complete: function() {
-            // Тут можем что-то делать ПОСЛЕ успешной отправки формы
-            console.log('Complete')
-            form.reset() 
-        }
-    });
-
-    return false;
-});
+    axios.post(URI_API,{
+        chat_id: CHAT_ID,
+        parse_mode: `html`,
+        text: message
+    })
+})
