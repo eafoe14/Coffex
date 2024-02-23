@@ -407,6 +407,9 @@ html,body{
 @media (max-width:580px){
     .about{
         margin-top: 171px;
+        width: 100%;
+        height: auto;
+        padding: 30px 0px 0px 0px;
     }
     .title1{
         font-size: 75px;
