@@ -202,6 +202,14 @@ html,body{
     color: bisque;
     font-weight: bold;
 }
+.slider__ocaffee{
+    text-align: center;
+    color: #442d25;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 50px;
+    border-radius: 50px;
+}
 
 .title{
     font-size: 120px;
@@ -211,29 +219,64 @@ html,body{
     font-size: 50px;
 }
 
+.subtitle2{
+    font-size: 30px;
+}
+
+
+.Nazvanie{
+    text-align: center;
+    color: #442d25;
+    font-weight: bold;
+    font-size: 35px;
+    text-transform: uppercase;
+}
+
 .container_telegramm {
-    background-color: rgba(255, 255, 255, 0.7); /* Прозрачный белый фон */
-    padding: 20px; 
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 30px; 
     margin: 0 auto;
-    max-width: 400px;
+    max-width: 1180px;
+    border-radius: 30px;
 }
 
 #tg {
     display: flex;
     flex-direction: column;
-    text-decoration:underline;
+    text-decoration: underline;
 }
 
 .label0 {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     color: #442d25;
     font-weight: bold;
+    font-size: 24px;
 }
 
 .input0,.textarea0 {
-    width: 300px; 
+    width: 600px; 
     padding: 5px; 
     margin-bottom: 10px; 
+    font-size: 18px;
+}
+
+.btn__form{
+    background-color: #442d25;
+    color: bisque;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px; 
+    transition: transform 0.3s;
+}
+
+.btn__form:hover{
+    transform: scale(1.1);
 }
 
 .slider-dots {
@@ -288,19 +331,58 @@ html,body{
     .subtitle{
         font-size: 40px;
     }
-}
-
-@media (max-width:390px){
-    .title{
-        font-size: 65px;
+    .container_telegramm{
+        max-width: 290x;
     }
-    
-    .subtitle{
-        font-size: 25px;
+    .label0 {
+        color: #442d25;
+        font-weight: bold;
+        font-size: 24px;
     }
     
     .input0,.textarea0 {
-        width: 250px; 
+        width: 300px; 
+        padding: 5px; 
+        font-size: 18px;
+    }
+    
+    .btn__form{
+        background-color: #442d25;
+        color: bisque;
+        border: none;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 14px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 5px; 
+        transition: transform 0.3s;
+    }
+    
+    .btn__form:hover{
+        transform: scale(1.1);
     }
 }
 
+.about__us {
+    background-color: bisque;
+    padding: 200px 0;
+}
+
+.section__title {
+    text-align: center;
+    font-size: 32px;
+    color: #442d25;
+    margin-bottom: 20px;
+}
+
+.about__text {
+    text-align: center;
+    font-size: 18px;
+    color: #554039;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
