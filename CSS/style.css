@@ -305,7 +305,6 @@ html,body{
 /* ------------------------------------------ */
 /* -------------- Раздел АКЦИИ -------------- */
 /* ------------------------------------------ */
-
 .stocks {
     width: 100%;
     max-width: 100%;
@@ -320,6 +319,11 @@ html,body{
     color: bisque;
     text-align: center;
     padding: 20px 0 20px 0;
+  }
+
+  .stocks__text{
+    font-size: 18px;
+    color: #442d25;
   }
   
   .stocks__container {
@@ -388,6 +392,107 @@ html,body{
     font-weight: bold;
     font-size: 24px;
 }
+
+/* ----------------------------------------- */
+/* -------------- Раздел МЕНЮ -------------- */
+/* ----------------------------------------- */
+.coffeeMenu{
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    background-color: bisque;
+    padding: 40px 0 40px 0;
+}
+
+.coffeeMenu__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.coffeeMenu__card{
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+    min-width: 230px;
+    max-width: 315px;
+    width: 100%;
+    background-color: #442d25;
+    text-align: left;
+    color: bisque;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+    font-size: 16px;
+    transform: translateZ(0);
+    perspective: 20em;
+}
+
+.coffeeMenu__card * {
+    box-sizing: border-box;
+    transition: all 0.3s ease-out;
+}
+
+.coffeeMenu__img{
+   border: 10px solid #442d25;
+}
+
+.coffeeMenu__image{
+    display: inline-block;
+    max-width: 100%;
+    vertical-align: top;
+    position: relative;
+    border: 5px solid bisque;
+    width: 300px;
+    height: 200px;
+}
+
+.coffeeMenu__subtitle{
+    font-size: 24px;
+    font-weight: bold;
+    color: bisque;
+    padding: 10px;
+    text-decoration: underline;
+}
+
+.coffeeMenu__text{
+    font-size: 18px;
+    color: bisque;
+    padding: 10px;
+}
+
+.coffeeMenu__price {
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px 0 10px 0;
+    background-color: #554039;
+}
+
+.coffeeMenu__new{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.coffeeMenu__link_align{
+    padding-top: 15px;
+    text-align: right;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.coffeeMenu__link{
+    color: #442d25;
+    font-weight: bold;
+    font-size: 24px;
+}
+
   
 /* ----------------------------------------------------------------- */
 /* -------------- ОТОБРАЖЕНИЕ НА ЭКРАНАХ МЕНЬШЕ 820px -------------- */
