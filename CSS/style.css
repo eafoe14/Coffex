@@ -652,6 +652,15 @@ html,body{
     padding-top: 20px;
 }
 
+.location__razdelLocation{
+    display: inline-block;
+}
+
+.location__yandex{
+    max-width: 100%;
+    height: auto;
+}
+
 /* -------------------------------------- */
 /* -------------- КОНТАКТЫ -------------- */
 /* -------------------------------------- */
