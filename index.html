@@ -65,7 +65,7 @@
                                         <input type="text" name="phone" class="input0 form_control" autocomplete="off">
 
                                         <label class="label0 form_control" required>Введите сообщение:</label>
-                                        <textarea name="message" cols="30" rows="4" placeholder="Введите сообщение" class="textarea0 form_control" autocomplete="off"></textarea>
+                                        <textarea name="message"  rows="4" placeholder="Введите сообщение" class="textarea0 form_control" autocomplete="off"></textarea>
                                         
                                         <button type="submit" class="btn__form">Отправить</button>
                                     </form>
@@ -243,11 +243,86 @@
             </div>
         </section>
         
+        <section class="reviews">
+            <div class="container_razdel">
+                <h2 class="title__brown">Отзывы</h2>
+                <div class="reviews__containers">
+                    <div class="reviews__container">
+                        <div class="reviews__containerIMG">
+                            <img class="reviews__img" src="img/reviews1.jpg">
+                        </div>
+                        <p class="reviews__subtitle">Михайлов Антон</p>
+                        <div class="reviews__containerComment">
+                            <p class="reviews__text"> Отличная уютная кофейня с большим меню напитков, кофейных и не только. Вкусные дессерты собственного производства. Приглушённый свет, расслабленная атмосфера. Столики достаточно далеко друг от друга, чтобы разговоры за ними не пересекались.</p>
+                        </div>
+                        <div class="cards__stars">
+                            <img class="cards__star" src="img/Star.png" alt="stars black">
+                            <img class="cards__star" src="img/Star.png" alt="stars black">
+                            <img class="cards__star" src="img/Star.png">
+                            <img class="cards__star" src="img/Star.png">
+                            <img class="cards__star" src="img/Star.png">
+                        </div>
+                    </div>
+
+                    <div class="reviews__container">
+                        <div class="reviews__containerIMG">
+                            <img class="reviews__img" src="img/reviws2.jpg">
+                        </div>
+                        <p class="reviews__subtitle">Титов Кирилл</p>
+                        <div class="reviews__containerComment">
+                            <p class="reviews__text">Кофейня "Coffeex." просто великолепна! Их атмосфера такая уютная и дружелюбная, аромат свежесваренного кофе несравненный. Обслуживание на высшем уровне, barista у них настоящие профессионалы, всегда готовые порадовать своих посетителей вкусным напитком.</p>
+                        </div>
+                        <div class="cards__stars">
+                            <img class="cards__star" src="img/Star.png" alt="stars black">
+                            <img class="cards__star" src="img/Star.png" alt="stars black">
+                            <img class="cards__star" src="img/Star.png">
+                            <img class="cards__star" src="img/Star.png">
+                            <img class="cards__star" src="img/Star.png">
+                        </div>
+                    </div>
+
+                    <div class="reviews__container">
+                        <div class="reviews__containerIMG">
+                            <img class="reviews__img" src="img/reviws3.jpg">
+                        </div>
+                        <p class="reviews__subtitle">Богданова Ксения</p>
+                        <div class="reviews__containerComment">
+                            <p class="reviews__text">"Coffeex." - это настоящая находка для любителей кофе! Кофе здесь просто божественный, каждая чашка настоящий шедевр! Атмосфера уютная, хочется остаться там на целый день, наслаждаясь ароматом и вкусом кофе. Обслуживание заслуживает высших оценок, персонал внимательный.</p>
+                        </div>
+                        <div class="cards__stars">
+                            <img class="cards__star" src="img/Star.png" alt="stars black">
+                            <img class="cards__star" src="img/Star.png" alt="stars black">
+                            <img class="cards__star" src="img/Star.png">
+                            <img class="cards__star" src="img/Star.png">
+                            <img class="cards__star" src="img/Star.png">
+                        </div>
+                    </div>
+                </div>
+
+                <h2 class="reviews__subtitle2">Оставь свой отзыв здесь</h2>
+
+                <div class="reviews_send">
+                    <form class="reviews__form" id="tg2">
+                        <div class="container__form">
+                            <label class="label1" for="name">Имя и фамилия:</label><br>
+                            <input class="reviews__input" type="text" name="namef" required autocomplete="off"><br><br>
+
+                            <label class="label1" for="review">Ваш отзыв:</label><br>
+                            <textarea class="reviews__textarea"  name="review" rows="4"  required autocomplete="off"></textarea><br><br>
+
+                            <button type="submit" class="btn__form1">Отправить</button>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
     </div>
 
 
     <script src="JS/jquery-3.7.1.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
     <script src="JS/script.js"></script>
+    <script src="JS/script__reviews.js"></script>
 </body>
 </html>

@@ -493,7 +493,132 @@ html,body{
     font-size: 24px;
 }
 
-  
+
+
+/* ------------------------------------ */
+/* -------------- ОТЗЫВЫ -------------- */
+/* ------------------------------------ */
+.reviews{
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    background-color: #442d25;
+    padding: 40px 0 40px 0;
+}
+.reviews__img{
+    margin: 0 auto;
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.cards__stars {
+    display: flex;
+    align-self: flex-end;
+    justify-content: space-evenly;
+    padding: 20px 0 20px 0;
+}
+
+.reviews__containerIMG{
+    padding: 20px 0 10px 0;
+}
+
+.reviews__containers{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.reviews__container{
+    width: 350px;
+    background-color: bisque;
+    padding: 10px;
+    border-radius: 20%;
+    margin-bottom: 20px;
+}
+
+.reviews__subtitle{
+    font-size: 24px;
+    font-weight: bold;
+    color: #442d25;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.reviews__text{
+    font-size: 18px;
+    color: #442d25;
+}  
+
+.reviews__containerComment{
+    border: 5px solid #442d25;
+    padding:  10px;
+    border-radius: 10%;
+    background-color:blanchedalmond;
+    font-style: italic;
+}
+
+.reviews__form{
+    background-color: #442d25;
+    color: bisque;
+    text-align: center;
+    border: 5px solid #554039;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.reviews__input, .reviews__textarea{
+    width: 600px; 
+    padding: 5px; 
+    margin-bottom: 10px; 
+    font-size: 18px;
+    border: 2px solid #442d25;
+    background-color: #efdecd;
+}
+
+.container__form{
+    border: 5px solid bisque;
+    padding: 10px;
+    background-color: #554039;
+    border-radius: 10px;
+}
+
+.label1{
+    margin-bottom: 15px;
+    color: bisque;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.btn__form1{
+    background-color: bisque;
+    color: #442d25;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px; 
+    transition: transform 0.3s;
+    width: 600px;
+}
+
+.btn__form1:hover{
+    transform: scale(1.1);
+}
+
+.reviews__subtitle2{
+    font-size: 34px;
+    font-weight: bold;
+    color: bisque;
+    padding: 30px 0 10px 0; 
+    text-decoration: underline;
+    text-align: center;
+}
+
 /* ----------------------------------------------------------------- */
 /* -------------- ОТОБРАЖЕНИЕ НА ЭКРАНАХ МЕНЬШЕ 820px -------------- */
 /* ----------------------------------------------------------------- */
@@ -672,5 +797,90 @@ html,body{
     .about__image {
         width: 80%;
         height: auto;
+    }
+}
+
+
+@media (max-width:700px){
+    .reviews__input, .reviews__textarea{
+        width: 400px; 
+        padding: 5px; 
+        margin-bottom: 10px; 
+        font-size: 18px;
+        border: 2px solid #442d25;
+        background-color: #efdecd;
+    }
+    
+    
+    .btn__form1{
+        background-color: bisque;
+        color: #442d25;
+        border: none;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 5px; 
+        transition: transform 0.3s;
+        width: 400px;
+    }
+}
+
+@media (max-width:500px){
+    .reviews__input, .reviews__textarea{
+        width: 300px; 
+        padding: 5px; 
+        margin-bottom: 10px; 
+        font-size: 18px;
+        border: 2px solid #442d25;
+        background-color: #efdecd;
+    }
+    
+    
+    .btn__form1{
+        background-color: bisque;
+        color: #442d25;
+        border: none;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 5px; 
+        transition: transform 0.3s;
+        width: 300px;
+    }
+}
+
+@media (max-width:400px){
+    .reviews__input, .reviews__textarea{
+        width: 200px; 
+        padding: 5px; 
+        margin-bottom: 10px; 
+        font-size: 18px;
+        border: 2px solid #442d25;
+        background-color: #efdecd;
+    }
+    
+    
+    .btn__form1{
+        background-color: bisque;
+        color: #442d25;
+        border: none;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 5px; 
+        transition: transform 0.3s;
+        width: 200px;
     }
 }

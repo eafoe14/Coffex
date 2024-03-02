@@ -52,4 +52,13 @@ document.getElementById('tg').addEventListener('submit', function(e) {
         parse_mode: `html`,
         text: message
     })
-})
+    .then(response => {
+        console.log('Отзыв успешно отправлен:', response.data);
+        alert('Отзыв успешно отправлен!'); 
+        this.reset();
+    })
+    .catch(error => {
+        console.error('Ошибка при отправке отзыва:', error);
+        alert('Ошибка при отправке отзыва!'); 
+    });
+});
