@@ -652,14 +652,6 @@ html,body{
     padding-top: 20px;
 }
 
-.location__razdelLocation{
-    display: inline-block;
-}
-
-.location__yandex{
-    width: 550px;
-    height: auto;
-}
 
 /* -------------------------------------- */
 /* -------------- КОНТАКТЫ -------------- */
@@ -692,6 +684,16 @@ html,body{
     color: bisque;
     text-align: center;
     font-size: 18px;
+}
+
+.location__razdelLocation{
+    width: 550px;
+    height: 500px;
+}
+
+.location__razdelLocation iframe {
+    width: 100%;
+    height: 400px;
 }
 
 /* ----------------------------------------------------------------- */
