@@ -657,7 +657,7 @@ html,body{
 }
 
 .location__yandex{
-    max-width: 100%;
+    width: 550px;
     height: auto;
 }
 
