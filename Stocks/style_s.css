@@ -166,6 +166,45 @@ li{
     border: 2px solid black;
 }
 
+/* -------------------------------------- */
+/* -------------- КОНТАКТЫ -------------- */
+/* -------------------------------------- */
+.footer{
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    background-color: #442d25;
+    padding: 40px 0 40px 0;
+}
+
+.footer__subtitle{
+    color: bisque;
+    text-align: center;
+    font-size: 20px;
+}
+
+.footer__social {
+    margin: 0 auto;
+    max-width: 342px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 45px;
+    padding-top: 20px
+}
+
+.footer__text{
+    color: bisque;
+    text-align: center;
+    font-size: 18px;
+}
+.title1{ 
+    font-size: 44px;
+    font-weight: bold;
+    color: bisque;
+    text-align: center;
+    padding: 20px 0 20px 0;
+}
 /* ----------------------------------------------------------------- */
 /* -------------- ОТОБРАЖЕНИЕ НА ЭКРАНАХ МЕНЬШЕ 820px -------------- */
 /* ----------------------------------------------------------------- */

@@ -493,8 +493,6 @@ html,body{
     font-size: 24px;
 }
 
-
-
 /* ------------------------------------ */
 /* -------------- ОТЗЫВЫ -------------- */
 /* ------------------------------------ */
@@ -617,6 +615,74 @@ html,body{
     padding: 30px 0 10px 0; 
     text-decoration: underline;
     text-align: center;
+}
+
+/* ------------------------------------------ */
+/* -------------- РАСПОЛОЖЕНИЕ -------------- */
+/* ------------------------------------------ */
+.location{
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    background-color: bisque;
+    padding: 40px 0 40px 0;
+}
+
+.location__razdel{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.location__razdelTEXT{
+    width:600px;
+}
+
+.location__text{
+    font-size: 20px;
+    color: #442d25;
+    border: 3px solid #442d25;
+    border-radius: 20px;
+    padding: 15px;
+    margin-top: 10px;
+}
+
+.location__allign{
+    text-align: center;
+    padding-top: 20px;
+}
+
+/* -------------------------------------- */
+/* -------------- КОНТАКТЫ -------------- */
+/* -------------------------------------- */
+.footer{
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    background-color: #442d25;
+    padding: 40px 0 40px 0;
+}
+
+.footer__subtitle{
+    color: bisque;
+    text-align: center;
+    font-size: 20px;
+}
+
+.footer__social {
+    margin: 0 auto;
+    max-width: 342px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 45px;
+    padding-top: 20px
+}
+
+.footer__text{
+    color: bisque;
+    text-align: center;
+    font-size: 18px;
 }
 
 /* ----------------------------------------------------------------- */
