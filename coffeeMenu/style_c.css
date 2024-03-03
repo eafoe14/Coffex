@@ -473,4 +473,9 @@ html,body{
         padding: 40px 0 40px 0;
         margin: 60px 0 0 0;
     }
+
+    .container__SANDWITCH_img img{
+        width: 300px;
+        height: 200px;
+    }
 }
